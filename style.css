@@ -1,0 +1,98 @@
+
+/* 1. Overall page */
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: "Consolas", "Courier New", monospace;
+    text-align: center;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+/* 2. Main heading */
+h1 {
+    color: #39ff14;
+    font-size: 36px;
+    text-shadow: 0 0 12px #39ff1460;
+}
+
+/* 3. Instructions */
+p {
+    color: #8b949e;
+    font-size: 16px;
+}
+
+/* 4. Sentence to type */
+#sentence {
+    color: #58a6ff;
+    font-size: 24px;
+    margin: 35px 0 20px;
+}
+
+/* 5. Typing area */
+textarea {
+    background-color: #161b22;
+    color: #39ff14;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 17px;
+    outline: none;
+    resize: vertical;
+    max-width: 90%;
+}
+
+/* Glow when typing */
+textarea:focus {
+    border-color: #39ff14;
+    box-shadow: 0 0 12px #39ff1440;
+}
+
+/* 6. Buttons */
+button {
+    background-color: #39ff14;
+    color: #0d1117;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 22px;
+    margin: 15px 6px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Button hover effect */
+button:hover:not(:disabled) {
+    background-color: #7dff68;
+    box-shadow: 0 0 15px #39ff1460;
+    transform: translateY(-2px);
+}
+
+/* Disabled buttons */
+button:disabled {
+    background-color: #30363d;
+    color: #8b949e;
+    cursor: not-allowed;
+}
+
+/* 7. Timer */
+#timer {
+    color: #39ff14;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* 8. Results */
+#results {
+    color: #39ff14;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.instruction {
+    color: #8b949e;
+    font-size: 14px;
+    margin-top: 8px;
+}

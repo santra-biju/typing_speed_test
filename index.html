@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Typing Speed Test</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        
+        <h1>⌨️Typing Speed Test</h1>
+        <p>Test your typing speed!</p>
+
+        <h3 id="sentence"></h3>
+
+        <textarea id="typed"
+            placeholder="Your typing goes here..."
+            rows="4" cols="50" disabled
+            oninput="checkTyping()"
+            onkeydown="handleEnter(event)" ></textarea>
+
+        <p>Time: <span id="timer">0</span> seconds</p>
+
+        <button id="start" onclick="startTest()">Start Test</button>
+        <p class="instruction">💡 Press Enter when you finish typing!</p>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+        <h2 id="results">Results:</h2>
+    </body>
+    </html>
